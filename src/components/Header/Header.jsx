@@ -29,7 +29,7 @@ const Header = () => {
 
         {/* ================ MENU ================ */}
         <div className="flex items-center justify-between ">
-          <div className="navigaton">
+          <div className="navigation">
             <ul className="menu flex items-center gap-9">
               {navLinks.map((link, index) => (
                 <li key={index}>

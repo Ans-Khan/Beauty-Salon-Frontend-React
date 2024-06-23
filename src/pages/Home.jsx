@@ -16,28 +16,28 @@ const Home = () => {
   return (
     <>
       {/* ================ Hero Section ================ */}
-      <section className="hero__Section">
-        <div className="container">
-          <div className="hero_Img overlay min-w-full overflow-x-hidden">
-            <div className="heading  w-[750px] mx-auto items-center">
-              <h1 className="font-[300] text-[68px] text-[white]">
+      <section className="hero__Section w-full">
+        <div className="container w-full">
+          <div className="hero_Img overlay w-full ">
+            <div className="heading  sm:w-[750px] mx-auto">
+              <h1 className="font-[300] lg:text-[68px] md:text-[50px] text-[28px] text-[white]">
                 One Platform For All Your Aesthetic Needs
               </h1>
-              <p className="font-[300] text-[24px] text-[white] pt-10">
+              <p className="font-[300] md:text-[24px] text-[14px] text-[white] md:pt-10 pt-5">
                 Discover the best services, trusted by our community
               </p>
 
               {/* ================ Search Bar ================ */}
 
-              <div className="search__box flex justify-between w-[850px] h-[68px] bg-[#E9E9E9] mt-14">
-                <div className="input__inner flex justify-between items-center  h-[52px] gap-[10px]">
-                  <div className="input__wrapper flex items-center w-[365px] h-[52px] bg-[white]">
-                    <img src={searchImg} alt="" />
+              <div className="search__box flex justify-between lg:w-[850px] md:h-[68px] h-[50px] bg-[#E9E9E9] md:mt-16 mt-14">
+                <div className="input__inner flex justify-between items-center md:h-[52px] md:gap-[10px]">
+                  <div className="input__wrapper flex items-center md:w-[365px] md:h-[52px] bg-[white]">
+                    <img src={searchImg} alt="" className="md:mr-0 mr-2" />
                     <input
-                      placeholder="Search Keyword here"
+                      placeholder="Search Keyword..."
                       type="text"
                       id="search"
-                      className="input__cls ml-[1rem] focus:outline-none"
+                      className="input__cls md:ml-[1rem] focus:outline-none md:w-full w-full"
                     />
                   </div>
 
@@ -47,7 +47,7 @@ const Home = () => {
                   {/* ================ Categories Component ================ */}
                 </div>
 
-                <button className="btn w-[180px] h-[52px] bg-btnColor text-[24px] text-[white] leading-[27.65px] text-center">
+                <button className="btn md:w-[180px] md:h-[52px] bg-btnColor md:text-[24px] text-[15px] text-[white] md:leading-[27.65px] text-center">
                   Search
                 </button>
               </div>
@@ -58,7 +58,7 @@ const Home = () => {
       {/* ================ Hero Section End ================ */}
 
       {/* ================ Listings Section ================ */}
-      <section>
+      {/* <section>
         <div className="container mx-auto">
           <div className="flex flex-col m-auto pt-[100px]">
             <h1 className="heading__listings text-[40px] text-[#D86B56] text-center p-[8px] gap-[8px]">
@@ -221,11 +221,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* ================ Listings Section End ================ */}
 
       {/* ================ Blogs Section ================ */}
-      <section>
+      {/* <section>
         <div className="container mx-auto mt-[6.5rem]">
           <div className="img__wrapper w-[1128px] h-[462px] mx-auto ">
             <img
@@ -255,11 +255,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* ================ Blogs Section END ================ */}
 
       {/* ================ Employees Section ================ */}
-      <section>
+      {/* <section>
         <div className="container mx-auto mt-[6.5rem] mb-[12rem] ">
           <div className="grid__cards grid grid-cols-3 mx-auto w-[1128px] h-[580px] gap-[20px]">
             <div className="card w-[360px] h-[580px] mx-auto">
@@ -359,7 +359,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* ================ Employees Section END ================ */}
     </>
   );

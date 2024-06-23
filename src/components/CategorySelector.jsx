@@ -38,24 +38,24 @@ const CategorySelector = () => {
   };
 
   return (
-    <div className="wrapper">
-      <div className="wrapper__box categories__wrapper flex items-center justify-center w-[212px] h-[52px] gap-[1rem] bg-[white] relative">
+    <div className="wrapper mr-1">
+      <div className="wrapper__box categories__wrapper w-full flex items-center justify-center md:w-[212px] md:h-[52px] md:gap-[1rem] bg-[white] relative">
         <img
           src={CategoriesIcon}
           alt=""
-          className="h-[24px] w-[24px] opacity-[60%] ml-[2rem]"
+          className="mobile__icon md:h-[24px] md:w-[24px] opacity-[60%] md:ml-[2rem]"
         />
         <div
-          className="selector flex w-full items-center justify-center opacity-[60%] text-[17px] cursor-pointer"
+          className="selector flex w-full items-center justify-center opacity-[60%] md:text-[17px] text-[14px] cursor-pointer"
           onClick={toggleDropdown}
         >
           {selectedOption}
           <BiChevronDown size={20} />
         </div>
       </div>
-      <div className="div absolute w-[13.5rem] ">
+      <div className="div absolute md:w-[13.5rem]">
         {isOpen && (
-          <ul className="category__list pt-5 bg-[#F16060]">
+          <ul className="category__list md:pt-5 bg-[#F16060]">
             {option.map((item, index) => (
               <li
                 key={index}

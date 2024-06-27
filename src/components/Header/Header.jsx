@@ -15,7 +15,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header className="header items-center justify-between w-full ">
+    <header className="header items-center justify-between ">
       <div
         className="flex items-center justify-around w-[368px] h-[24px] py-[3rem] px-[1rem] mx-auto
       "

@@ -39,7 +39,7 @@ const CategorySelector = () => {
 
   return (
     <div className="wrapper mr-1">
-      <div className="wrapper__box categories__wrapper w-full flex items-center justify-center md:w-[212px] md:h-[52px] md:gap-[1rem] bg-[white] relative">
+      <div className="wrapper__box categories__wrapper w-full flex items-center justify-center lg:w-[212px] md:h-[52px] md:gap-[1rem] bg-[white] relative">
         <img
           src={CategoriesIcon}
           alt=""
